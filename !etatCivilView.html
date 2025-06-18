@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>État-civil - Dossier Étudiant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-menu">
+        <div class="student-nav-info">
+            <div class="student-name">VELYU PETROV</div>
+            <div class="student-number">22301653</div>
+        </div>
+        <div class="nav-divider"></div>
+        <ul>
+            <li><a href="!etatCivilView.html"><i class="fas fa-user"></i>Etat-civil</a></li>
+            <li><a href="!informationsAnnuellesView.html"><i class="fas fa-calendar-alt"></i>Information annuelles</a></li>
+            <li><a href="!adressesView.html"><i class="fas fa-map-marker-alt"></i>Adresses</a></li>
+            <li><a href="!inscriptionsView.html"><i class="fas fa-edit"></i>Inscriptions</a></li>
+            <li><a href="!calendrierEpreuvesView.html"><i class="fas fa-calendar-check"></i>Calendrier des epreuves</a></li>
+            <li><a href="!notesView.html"><i class="fas fa-graduation-cap"></i>Notes & resultats</a></li>
+            <div class="nav-divider"></div>
+            <li><a href="#" onclick="showModal()"><i class="fas fa-question-circle"></i>Aide</a></li>
+            <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i>Deconnexion</a></li>
+            <div class="nav-divider"></div>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>État-civil</h1>
+
+            <div class="student-id">Dossier: 22301653</div>
+        </header>
+
+        <main>
+            <section class="generalites">
+                <h2>Généralités</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>NNE</label>
+                        <span>193034611EF</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Prénom et Nom</label>
+                        <span>VELYU PETROV</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Email</label>
+                        <span><a href="mailto:velyu.petrov@etu.univ-cotedazur.fr">velyu.petrov@etu.univ-cotedazur.fr</a></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Nationalité</label>
+                        <span>BULGARE</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Date de naissance</label>
+                        <span>24/01/2003</span>
+                    </div>
+                    <div class="info-item">
+                        <label>À</label>
+                        <span>VARNA</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Département ou Pays</label>
+                        <span>BULGARIE</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="baccalaureat">
+                <h2>Baccalauréat</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Baccalauréat</label>
+                        <span>Série générale</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Spécialité 1ere</label>
+                        <span>PHYSIQUE-CHIMIE</span>
+                    </div>
+                    <div class="info-item">
+                        <label>1ere spécialité</label>
+                        <span>MATHÉMATIQUES</span>
+                    </div>
+                    <div class="info-item">
+                        <label>2nd spécialité</label>
+                        <span>LITTERATURE EN ANGLAIS</span>
+                    </div>
+                    <div class="info-item">
+                        <label>1ere option</label>
+                        <span>MATHÉMATIQUES EXPERTES</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Année</label>
+                        <span>2023</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Mention</label>
+                        <span>Assez Bien</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Type établissement</label>
+                        <span>LYCEE</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Établissement</label>
+                        <span>STE MARIE</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Département</label>
+                        <span>ALPES MARITIMES</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Contact</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Portable</label>
+                        <span>+33650555869</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Email personnel</label>
+                        <span><a href="mailto:velyup@gmail.com">velyup@gmail.com</a></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Help Modal -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <h3>Aide</h3>
+            <p>Ce canal vous permet de consulter votre dossier étudiant. En accédant à votre dossier, vous trouverez les informations suivantes :</p>
+            <ul>
+                <li>État-civil : Nom, prénoms, date de naissance, numéro de dossier, baccalauréat...</li>
+                <li>Adresses : Adresse annuelle, Adresse fixe</li>
+                <li>Inscriptions : La liste de toutes vos inscriptions à l'Université...</li>
+                <li>Calendrier des examens : Dates, Salles, Durées...</li>
+                <li>Notes et résultats : Tous vos résultats aux diplômes, années intermédiaires, éléments pédagogiques et épreuves.</li>
+            </ul>
+            <p class="note">Remarque : Les résultats sont visibles dès leur publication par les scolarités</p>
+            <button class="close-button" onclick="closeModal()">× Fermer</button>
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            document.getElementById('helpModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('helpModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById('helpModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

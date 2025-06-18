@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déconnexion - Université Côte d'Azur</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            width: 300px;
+        }
+
+        .logout-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .logout-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .logout-title i {
+            font-size: 24px;
+        }
+
+        .logout-message {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .login-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+
+        .security-note {
+            color: #666;
+            margin-top: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <img src="images/logo.png" alt="Université Côte d'Azur" class="logo">
+    
+    <div class="logout-container">
+        <div class="logout-title">
+            <i class="fas fa-check-circle" style="color: #4CAF50;"></i>
+            <h2>Déconnexion réussie</h2>
+        </div>
+        <p class="logout-message">
+            Vous vous êtes déconnecté avec succès du Service Central d'Authentification. Vous pouvez vous <a href="index.html" class="login-link">reconnecter</a>.
+        </p>
+        <p class="security-note">
+            Pour des raisons de sécurité, veuillez fermer votre navigateur web.
+        </p>
+    </div>
+</body>
+</html>

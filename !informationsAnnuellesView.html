@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations annuelles - Dossier Étudiant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-menu">
+        <div class="student-nav-info">
+            <div class="student-name">VELYU PETROV</div>
+            <div class="student-number">22301653</div>
+        </div>
+        <div class="nav-divider"></div>
+        <ul>
+            <li><a href="!etatCivilView.html"><i class="fas fa-user"></i>Etat-civil</a></li>
+            <li><a href="!informationsAnnuellesView.html"><i class="fas fa-calendar-alt"></i>Information annuelles</a></li>
+            <li><a href="!adressesView.html"><i class="fas fa-map-marker-alt"></i>Adresses</a></li>
+            <li><a href="!inscriptionsView.html"><i class="fas fa-edit"></i>Inscriptions</a></li>
+            <li><a href="!calendrierEpreuvesView.html"><i class="fas fa-calendar-check"></i>Calendrier des epreuves</a></li>
+            <li><a href="!notesView.html"><i class="fas fa-graduation-cap"></i>Notes & resultats</a></li>
+            <div class="nav-divider"></div>
+            <li><a href="#" onclick="showModal()"><i class="fas fa-question-circle"></i>Aide</a></li>
+            <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i>Deconnexion</a></li>
+            <div class="nav-divider"></div>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Informations annuelles</h1>
+            <div class="student-id">Année universitaire 2024/2025</div>
+        </header>
+
+        <main>
+            <section class="status">
+                <h2>Statut étudiant</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Étudiant Boursier</label>
+                        <span>Non</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Étudiant Salarié</label>
+                        <span>Non</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Aménagement d'étude</label>
+                        <span>Non</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Help Modal -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <h3>Aide</h3>
+            <p>Ce canal vous permet de consulter votre dossier étudiant. En accédant à votre dossier, vous trouverez les informations suivantes :</p>
+            <ul>
+                <li>État-civil : Nom, prénoms, date de naissance, numéro de dossier, baccalauréat...</li>
+                <li>Adresses : Adresse annuelle, Adresse fixe</li>
+                <li>Inscriptions : La liste de toutes vos inscriptions à l'Université...</li>
+                <li>Calendrier des examens : Dates, Salles, Durées...</li>
+                <li>Notes et résultats : Tous vos résultats aux diplômes, années intermédiaires, éléments pédagogiques et épreuves.</li>
+            </ul>
+            <p class="note">Remarque : Les résultats sont visibles dès leur publication par les scolarités</p>
+            <button class="close-button" onclick="closeModal()">× Fermer</button>
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            document.getElementById('helpModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('helpModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById('helpModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
