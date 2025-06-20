@@ -1,3 +1,4 @@
+<?php require_once 'auth_check.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -20,7 +21,7 @@
 <body>
     <nav class="nav-menu">
         <div class="student-nav-info">
-            <div class="student-name">VELYU PETROV</div>
+            <div class="student-name"><?php echo htmlspecialchars($_SESSION['username']); ?></div>
             <div class="student-number">22301653</div>
         </div>
         <div class="nav-divider"></div>
